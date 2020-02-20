@@ -1,6 +1,6 @@
 {
     "name": "songsterr-api-node",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "npm module for Songsterr v2 API",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
