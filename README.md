@@ -11,13 +11,13 @@ Module to fetch tabs from songsterr's api v2.
 ```
 const { songsterrSearch } = require("songsterr-api-node")
 
-const fetch = async () => {
-    const results = await songsterrSearch(search)
+const fetch = async string => {
+    const results = await songsterrSearch(string)
     console.log('Tabs')
     console.log(results)
 }
 
-fetch()
+fetch('track or artist')
 ```
 
 ## Why?
