@@ -1,0 +1,26 @@
+{
+    "name": "songsterr-api-node",
+    "version": "1.0.0",
+    "description": "",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "scripts": {
+        "test": "jest --config=jest.config.json",
+        "prepublish": "npm test || tsc",
+        "dev": "tsnd --respawn src/index.ts"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@types/jest": "^22.1.4",
+        "@types/node": "^9.4.6",
+        "jest": "^22.4.2",
+        "ts-jest": "^22.4.1",
+        "ts-node-dev": "^1.0.0-pre.44",
+        "typescript": "^2.7.2"
+    },
+    "dependencies": {
+        "axios": "^0.19.2"
+    }
+}
