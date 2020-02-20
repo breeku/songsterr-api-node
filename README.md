@@ -16,6 +16,8 @@ const fetch = async () => {
     console.log('Tabs')
     console.log(results)
 }
+
+fetch()
 ```
 
 ## Why?

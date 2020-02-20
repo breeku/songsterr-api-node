@@ -1,6 +1,6 @@
 {
     "name": "songsterr-api-node",
-    "version": "1.0.0",
+    "version": "1.0.2",
     "description": "npm module for Songsterr v2 API",
     "main": "dist/src/index.js",
     "types": "dist/src/index.d.ts",
@@ -8,6 +8,9 @@
         "test": "jest --config=jest.config.json",
         "prepublish": "npm test && tsc",
         "dev": "tsnd --respawn src/index.ts"
+    },
+    "publishConfig": {
+        "registry": "https://npm.pkg.github.com/"
     },
     "keywords": [
         "songsterr",
@@ -28,5 +31,9 @@
     },
     "dependencies": {
         "axios": "^0.19.2"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/breeku/songsterr-api-node.git"
     }
 }
