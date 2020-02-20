@@ -1,13 +1,5 @@
-import axios from "axios"
+import fetch from "node-fetch"
 import { idToTuning } from "./idToTuning"
-
-const api = axios.create({
-    baseURL: "https://www.songsterr.com/api/",
-    responseType: "json",
-    headers: {
-        "Content-Type": "application/json"
-    }
-})
 
 /**
  * @param {string} string - A string to search for.
@@ -15,8 +7,14 @@ const api = axios.create({
  */
 export const songsterrSearch = async (string: string) => {
     try {
-        const response = await api.get("/songs?pattern=" + string + "&size=200")
-        const Tabs: Array<any> = response.data
+        const response = await (
+            await fetch(
+                "https://www.songsterr.com/api/songs?pattern=" +
+                    string +
+                    "&size=200"
+            )
+        ).json()
+        const Tabs: Array<any> = response
         for (const songs of Tabs) {
             for (const tracks of songs.tracks) {
                 if (tracks.tuning) tracks.tuning = idToTuning(tracks.tuning)
