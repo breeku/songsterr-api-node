@@ -1,9 +1,9 @@
 {
     "name": "songsterr-api-node",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "npm module for Songsterr v2 API",
-    "main": "dist/src/index.js",
-    "types": "dist/src/index.d.ts",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
     "scripts": {
         "test": "jest --config=jest.config.json",
         "prepublish": "npm test && tsc",
