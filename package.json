@@ -9,9 +9,6 @@
         "prepublish": "npm test && tsc",
         "dev": "tsnd --respawn src/index.ts"
     },
-    "publishConfig": {
-        "registry": "https://npm.pkg.github.com/"
-    },
     "keywords": [
         "songsterr",
         "api",
