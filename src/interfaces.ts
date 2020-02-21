@@ -1,7 +1,7 @@
 export interface InewTuning {
-	name?: string
-	notes?: string
-	octaves?: string
+	name: string
+	notes: string
+	octaves: string
 }
 
 interface Inames {
@@ -30,4 +30,4 @@ interface IsongsterrObject {
 	tracks: Itracks[]
 }
 
-export type IsongsterrTabs = Array<IsongsterrObject>
+export type IsongsterrTabs = IsongsterrObject[]

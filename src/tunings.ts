@@ -41,6 +41,8 @@ export const pitch: string[] = [
 			"B0 E1 A1 D2 G2 C3": "Standard 6-string bass"
 		},
 		7: {
-			"B1 E2 A2 D3 G3 B3 E4": "7-string guitar"
+			"B1 E2 A2 D3 G3 B3 E4": "Standard 7-string",
+			"A1 E2 A2 D3 G3 B3 E4": "Drop A 7-string",
+			"A1 D2 A2 D3 G3 B3 E4": "Drop D + A 7-string"
 		}
 	}
