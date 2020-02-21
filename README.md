@@ -1,5 +1,10 @@
 # songsterr-api-node
 
+![npm bundle size](https://img.shields.io/bundlephobia/min/songsterr-api-node)
+![Code Climate maintainability](https://img.shields.io/codeclimate/maintainability/breeku/songsterr-api-node)
+![npm](https://img.shields.io/npm/dm/songsterr-api-node)
+![NPM](https://img.shields.io/npm/l/songsterr-api-node?color=brightgreen)
+
 Module to fetch tabs from songsterr's api v2.
 
 ## Installation

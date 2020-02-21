@@ -1,31 +1,32 @@
 import { pitch, names } from "./tunings"
+import { InewTuning } from "./interfaces"
 
-const idToString = (tuning: Array<number>, octave: boolean) => {
-    return tuning.map((tuning: number) => {
-        const note = Math.floor(tuning / 12) - 1
-        return pitch[tuning % 12] + (octave ? note : "")
-    })
+const idToString = (tuning: number[], octaves: boolean): string[] => {
+	return tuning.map((tuning: number) => {
+		const notes = Math.floor(tuning / 12) - 1
+		return pitch[tuning % 12] + (octaves ? notes : "")
+	})
 }
 
-export function idToTuning(tuning: Array<number>) {
-    const octave: string = idToString(tuning, true)
-            .reverse()
-            .join(" "),
-        note: string = idToString(tuning, false)
-            .reverse()
-            .map((tuning: string, octave: number) =>
-                octave === tuning.length - 1 ? tuning.toLowerCase() : tuning
-            )
-            .join(" ")
+export function idToTuning(tuning: number[]): InewTuning {
+	const octaves: string = idToString(tuning, true)
+			.reverse()
+			.join(" "),
+		notes: string = idToString(tuning, false)
+			.reverse()
+			.map((tuning: string, octaves: number) =>
+				octaves === tuning.length - 1 ? tuning.toLowerCase() : tuning
+			)
+			.join(" ")
 
-    let name: string = ""
+	let name = ""
 
-    if (tuning.length in names && octave in names[tuning.length])
-        name = names[tuning.length][octave]
+	if (tuning.length in names && octaves in names[tuning.length])
+		name = names[tuning.length][octaves]
 
-    return {
-        octave,
-        note,
-        name
-    }
+	return {
+		octaves,
+		notes,
+		name
+	}
 }
