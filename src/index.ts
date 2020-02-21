@@ -5,7 +5,7 @@ const BASEURL = "https://www.songsterr.com/api/"
 
 /**
  * @param {string} string - A string to search for.
- * @return {Object} - Object that includes all result's
+ * @return {Array} Array - Array of object's that includes all result's
  */
 export const songsterrSearch = async (
 	string: string
