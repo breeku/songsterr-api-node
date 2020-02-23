@@ -1,7 +1,7 @@
 {
 	"name": "songsterr-api-node",
-	"version": "1.0.7",
-	"description": "npm module for Songsterr v2 API",
+	"version": "1.0.8",
+	"description": "npm module for Songsterr's API",
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
 	"scripts": {
@@ -15,7 +15,8 @@
 		"api",
 		"guitar",
 		"tabs",
-		"bass"
+		"bass",
+		"music"
 	],
 	"author": "Matias Mäkeä",
 	"license": "MIT",

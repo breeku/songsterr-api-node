@@ -5,7 +5,7 @@
 ![npm](https://img.shields.io/npm/dm/songsterr-api-node)
 ![NPM](https://img.shields.io/npm/l/songsterr-api-node?color=brightgreen)
 
-Module to fetch tabs from songsterr's api v2.
+Unoffical module to fetch tabs from Songsterr's API.
 
 ## Installation
 
